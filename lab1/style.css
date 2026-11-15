@@ -220,3 +220,27 @@ footer p {
     line-height: 1.6;
     resize: vertical;
 }
+
+
+.back-button {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 22px;
+    background-color: #002868;
+    color: white;
+    border-radius: 7px;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.2s;
+}
+
+.back-button:visited {
+    color: white;
+}
+
+.back-button:hover,
+.back-button:visited:hover {
+    background-color: #BF0A30;
+    color: white;
+}

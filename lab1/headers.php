@@ -22,7 +22,7 @@ if ($headers === false) {
 <body>
 
     <header>
-        <img src="images/logo.png" alt="Московский Политех" class="university-logo">
+        <img src="../assets/images/logo.png" alt="Московский Политех" class="university-logo">
 
         <h1>Лабораторная работа №1</h1>
     </header>
@@ -35,8 +35,13 @@ if ($headers === false) {
         <textarea class="headers-output" readonly><?= htmlspecialchars($result, ENT_QUOTES, 'UTF-8') ?></textarea>
 
         <p>
-            <a href="index.php">Вернуться к форме</a>
+            <a href="index.php" class="back-button">Вернуться к форме</a>
         </p>
+
+        <a href="/php-labs/index.php" class="back-button">
+            ← На главную портфолио
+        </a>
+
     </main>
 
     <footer>
