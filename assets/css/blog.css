@@ -1,0 +1,89 @@
+/* Структура блога */
+
+.blog-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 220px;
+    gap: 30px;
+}
+
+.blog-content {
+    min-width: 0;
+}
+
+.blog-content h2 {
+    color: #002868;
+    margin-top: 0;
+}
+
+/* Боковое меню */
+
+.blog-sidebar {
+    padding: 20px;
+    background-color: #F1F1F1;
+    border-radius: 10px;
+    border-left: 4px solid #BF0A30;
+}
+
+.blog-sidebar h3 {
+    margin-top: 0;
+    color: #002868;
+}
+
+.blog-sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.blog-sidebar li {
+    margin-bottom: 15px;
+}
+
+.blog-sidebar a {
+    color: #002868;
+    text-decoration: none;
+}
+
+.blog-sidebar a:hover {
+    color: #BF0A30;
+    text-decoration: underline;
+}
+
+/* Адаптация под телефоны */
+
+@media (max-width: 700px) {
+    .blog-layout {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* Кнопка возврата в портфолио */
+
+.back-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 25px;
+    padding: 12px 22px;
+
+    background-color: #002868;
+    color: #FFFFFF;
+    border-radius: 7px;
+
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+
+    transition: background-color 0.2s;
+}
+
+.back-button:visited {
+    color: #FFFFFF;
+}
+
+.back-button:hover,
+.back-button:visited:hover {
+    background-color: #BF0A30;
+    color: #FFFFFF;
+}

@@ -1,0 +1,20 @@
+
+# Секретные данные
+.env
+.env.*
+config.local.php
+admin_secret.php
+
+# Резервные копии базы данных
+php_labs.sql
+/backups/
+
+# Временные файлы
+*.log
+*.tmp
+
+# Настройки редактора
+.vscode/
+
+# Зависимости
+/vendor/

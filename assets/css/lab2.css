@@ -1,0 +1,280 @@
+/* Таблица контактов */
+
+.contacts-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 15px;
+}
+
+.contacts-table th {
+    background-color: #002868;
+    color: #FFFFFF;
+    padding: 15px;
+    text-align: left;
+    border: 1px solid #D5DAE3;
+}
+
+.contacts-table td {
+    padding: 13px 15px;
+    border: 1px solid #D5DAE3;
+}
+
+.contacts-table tbody tr:nth-child(even) {
+    background-color: #F1F1F1;
+}
+
+.contacts-table tbody tr:hover {
+    background-color: #E6ECF5;
+}
+
+
+/* Основное меню */
+
+.lab2-menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.lab2-menu a,
+.lab2-submenu a {
+    display: inline-block;
+    padding: 12px 18px;
+    background-color: #002868;
+    color: #FFFFFF;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: background-color 0.2s;
+}
+
+.lab2-menu a:hover,
+.lab2-submenu a:hover {
+    background-color: #184A94;
+    color: white;
+}
+
+/* Активный пункт */
+
+.lab2-menu a.is-active,
+.lab2-submenu a.is-active,
+.lab2-menu a.is-active:hover,
+.lab2-submenu a.is-active:hover {
+    background-color: #BF0A30;
+    color: #FFFFFF;
+
+}
+
+/* Дополнительное меню сортировки */
+
+.lab2-submenu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 25px;
+}
+
+.lab2-submenu a {
+    padding: 8px 14px;
+    font-size: 12px;
+}
+
+
+/* Пагинация */
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 25px;
+}
+
+.pagination a {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #002868;
+    color: #FFFFFF;
+    text-decoration: none;
+    border: 2px solid transparent;
+    border-radius: 6px;
+}
+
+.pagination a:hover {
+    border: 2px solid #BF0A30;
+}
+
+.pagination a.is-active {
+    background-color: #BF0A30;
+}
+
+
+/* Форма добавления контактов */
+
+.contact-form {
+    max-width: 650px;
+    margin: 20px auto;
+}
+
+.contact-form label {
+    display: block;
+    margin: 15px 0 7px;
+    font-weight: bold;
+    color: #002868;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px;
+    border: 1px solid #B0B8C5;
+    border-radius: 6px;
+    font: inherit;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form button {
+    margin-top: 25px;
+    padding: 13px 25px;
+    background-color: #002868;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #BF0A30;
+}
+
+/* Сообщения о результате */
+
+.form-message {
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.form-message.success {
+    color: #146C2E;
+    background-color: #E1F5E6;
+}
+
+.form-message.error {
+    color: #BF0A30;
+    background-color: #FCE7EC;
+}
+
+
+/* Список ошибок валидации */
+
+.form-message ul {
+    margin-bottom: 0;
+    padding-left: 20px;
+}
+
+.form-message li {
+    margin-top: 6px;
+}
+
+/* Подпись обязательных полей */
+
+.required-note {
+    margin-top: 15px;
+    font-size: 13px;
+    color: #666666;
+}
+
+
+/* Список контактов для редактирования */
+
+.edit-contact-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 20px 0 25px;
+}
+
+.edit-contact-list a {
+    padding: 10px 14px;
+    border: 1px solid #D5DAE3;
+    border-radius: 6px;
+    color: #002868;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.edit-contact-list a:hover {
+    border-color: #002868;
+    background-color: #E6ECF5;
+}
+
+.edit-contact-list a.is-active {
+    background-color: #BF0A30;
+    border-color: #BF0A30;
+    color: #FFFFFF;
+}
+
+
+/* Список контактов для удаления */
+
+.delete-contact-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.delete-contact-list a {
+    padding: 10px 14px;
+    border: 1px solid #D5DAE3;
+    border-radius: 6px;
+    color: #002868;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.delete-contact-list a:hover {
+    background-color: #FCE7EC;
+    border-color: #BF0A30;
+}
+
+.delete-contact-list a.is-active {
+    background-color: #BF0A30;
+    border-color: #BF0A30;
+    color: white;
+}
+
+/* Подтверждение удаления */
+
+.delete-confirmation {
+    margin-top: 25px;
+    padding: 20px;
+    background-color: #F1F1F1;
+    border-radius: 8px;
+}
+
+.delete-btn {
+    padding: 12px 24px;
+    background-color: #BF0A30;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    background-color: #930824;
+}
